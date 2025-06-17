@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orders"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/txt_vehicleNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="//vehicle number//"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Vehicle No.   "
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#205072"
+                    android:textStyle="bold"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/txt_salesRep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="//sales rep//"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Sales Rep   "
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp">
+                    <Spinner
+                        android:id="@+id/spinner_route"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="Choose Customer's Route"
+                        android:hint="Choose Customer's Route" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Route   "
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp">
+                    <DatePicker
+                        android:id="@+id/datePicker_saleDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Sale Date   "
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_loadCustomer"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Load"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp">
+                    <Spinner
+                        android:id="@+id/spinner_customerName"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="Choose Customer's Name"
+                        android:hint="Choose Customer's Name" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Customer Name   "
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    android:background="#ffffff"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/viewItem"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="View Item >>"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
